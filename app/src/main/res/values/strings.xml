@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="sell">Sell</string>
+    <string name="quantity">Quantity in Stock:</string>
+    <string name="quantity_req">Quantity in Stock <font color='#FF0000'>*</font></string>
+    <string name="game_name_req">Game Name <font color='#FF0000'>*</font></string>
+    <string name="game_price_req">Game Price <font color='#FF0000'>*</font></string>
+    <string name="save_action">Save</string>
+    <string name="game_detail_fragment_title">Game Details</string>
+    <string name="add_fragment_title">Add Game</string>
+    <string name="edit_fragment_title">Edit Game</string>
+    <string name="price">Price</string>
+    <string name="quantity_in_stock">Quantity\nIn Stock</string>
+    <string name="game">Game</string>
+    <string name="delete">Delete</string>
+    <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="currency_symbol">$</string>
+    <string name="edit_game">Edit Game</string>
+    <string name="add_new_game">Add new game</string>
+</resources>

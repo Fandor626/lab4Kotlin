@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/gameListFragment">
+
+    <fragment
+        android:id="@+id/gameListFragment"
+        android:name="com.example.game.GameListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/game_list_fragment">
+        <action
+            android:id="@+id/action_gameListFragment_to_gameDetailFragment"
+            app:destination="@id/gameDetailFragment" />
+        <action
+            android:id="@+id/action_gameListFragment_to_addGameFragment"
+            app:destination="@id/addGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameDetailFragment"
+        android:name="com.example.game.GameDetailFragment"
+        android:label="@string/game_detail_fragment_title"
+        tools:layout="@layout/fragment_game_detail">
+        <argument
+            android:name="game_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_gameDetailFragment_to_addGameFragment"
+            app:destination="@id/addGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGameFragment"
+        android:name="com.example.game.AddGameFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_game">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="game_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addGameFragment_to_gameListFragment"
+            app:destination="@id/gameListFragment"
+            app:popUpTo="@id/gameListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
